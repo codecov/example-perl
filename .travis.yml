@@ -1,0 +1,19 @@
+language: perl
+perl:
+  - "5.18"
+
+before_script:
+  - cpanm --quiet --notest --skip-satisfied Devel::Cover Devel::Cover::Report::Codecov
+
+script:
+  - perl Build.PL
+  - ./Build build
+  - cover -test
+
+after_success:
+  - cover -report codecov
+
+notifications:
+  slack:
+    - secure: "c4ITi4SbAos69AvXPG23RNFdVC2HlmWD9G3T1c7CRRsBpwUf7hGAollOAGoVnZjA1QcHHLyDJL+TVYVc2vE537OhpJaFNySydzRMXr/Wd6pDPpRXKAL+XjsUgYHN2DA/cOM/EItIwJ5Td6QOIJIJoda2P7lsFI6zsT6co3Z9IMgb5OmGfs5ctu5AGTQ+fHdquySzH9jcuGj7bZ/NHUngfVlUHbvmsV4B78rkqONN/B+jHJsOkdkZND4lv1JKb5hxrg+lKWAiJnTbkOkIRyXE4w99VbKebpqrT4Vx0NSMS28vDOOMd16ZbjAKOi62PpmguSxlxmPesP4aS7LJ3WLB+2jJAOqkxqGcL25BdTHIdYiTW6O4F2SZyHBh/o7VQ1rz7NF9XJkgIynE7bH5pQ11Zmx6E4Ya7Lu151iK3g8Yxzk6zLnPbVrGf8HD35BuXEZLnUp5ZeIgWYKKRAEotyzDC689FnPheziIITlfENmZqqH4ueWPYFMuifOPtPjBL9+CLyzzWpuwzVI4vNMEeyjKbKEH7rjhrZPbnOfbu/tqAzUZu50CfiIPS9UT5z9V/zRbexzk4D4V7PUiAl5w+SfIpbUlCgTLmwXWPQhR4BrxgM3/jl4f4A5QT/wAYdZgwmYJuZcLpl4DKxDndqzLkNbgWGCzZH4COu0dX3a/6SiEffc="
+
