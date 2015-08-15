@@ -1,0 +1,6 @@
+name = "Example"
+# badges = ["travis"]
+authority="cpan:PINE"
+
+module_maker="ModuleBuildTiny"
+
