@@ -11,7 +11,7 @@ This repository serves as an **Example** on how to use [Devel::Cover::Report::Co
 Try this commands as following if you use ExtUtils::MakeMaker.
 
 ```
-$ cpanm --quiet --notest --skip-satisfied Devel::Cover::Report::Codecov
+$ cpanm --quiet --notest --skip-satisfied Devel::Cover Devel::Cover::Report::Codecov
 $ perl Build.PL
 $ ./Build build
 $ cover -test -report codecov
@@ -21,7 +21,7 @@ $ cover -test -report codecov
 Try this commands as following if you use `prove` direct.
 
 ```
-$ cpanm --quiet --notest --skip-satisfied Devel::Cover::Report::Codecov
+$ cpanm --quiet --notest --skip-satisfied Devel::Cover Devel::Cover::Report::Codecov
 $ cover -delete
 $ HARNESS_PERL_SWITCHES="-MDevel::Cover=+ignore,^local/|^t/" prove -r t
 $ cover -report codecov
