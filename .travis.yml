@@ -3,7 +3,7 @@ perl:
   - "5.18"
 
 before_script:
-  - cpanm --quiet --notest --skip-satisfied Devel::Cover Devel::Cover::Report::Codecov
+  - cpanm --quiet --notest --skip-satisfied git://github.com/codecov/codecov-perl@master
 
 script:
   - perl Build.PL
