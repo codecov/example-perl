@@ -12,7 +12,7 @@ script:
   - cover -test
 
 after_success:
-  - cover -report codecov
+  - travis_retry cover -report codecov
 
 notifications:
   slack:
