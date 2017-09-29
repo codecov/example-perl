@@ -45,7 +45,7 @@ after_success:
 
 > ### Start testing with [Travis](https://travis-ci.org/)
 
-# [![codeship](https://avatars1.githubusercontent.com/u/2988541?v=2&s=50)](https://codeship.io/) Codeship [ ![Codeship Status for pine613/example-perl](https://codeship.com/projects/40a2d330-2560-0133-f5b1-72f090cba113/status?branch=master)](https://codeship.com/projects/96951)
+# [![codeship](https://avatars1.githubusercontent.com/u/2988541?v=2&s=50)](https://codeship.io/) Codeship
 > Append to your `Setup Commands`
 
 ```sh
@@ -72,7 +72,7 @@ CODECOV_TOKEN=<YOUR_UPLOAD_TOKEN>
 
 > ### Start testing with [Codeship](https://codeship.io/)
 
-# [![circleci](https://avatars0.githubusercontent.com/u/1231870?v=2&s=50)](https://circleci.com/) Circle CI [![Circle CI](https://circleci.com/gh/pine613/example-perl/tree/master.svg?style=svg)](https://circleci.com/gh/pine613/example-perl/tree/master)
+# [![circleci](https://avatars0.githubusercontent.com/u/1231870?v=2&s=50)](https://circleci.com/) Circle CI (1.0)
 > Append to your `circle.yml` file
 
 ```yml
