@@ -11,7 +11,7 @@ This repository serves as an **Example** on how to use [Devel::Cover::Report::Co
 Try this commands as following if you use ExtUtils::MakeMaker.
 
 ```
-$ cpanm --quiet --notest --skip-satisfied Devel::Cover Devel::Cover::Report::Codecov
+$ cpanm --quiet --notest --skip-satisfied Devel::Cover::Report::Codecov
 $ perl Build.PL
 $ ./Build build
 $ cover -test -report codecov
@@ -21,7 +21,7 @@ $ cover -test -report codecov
 Try this commands as following if you use `prove` direct.
 
 ```
-$ cpanm --quiet --notest --skip-satisfied Devel::Cover Devel::Cover::Report::Codecov
+$ cpanm --quiet --notest --skip-satisfied Devel::Cover::Report::Codecov
 $ cover -delete
 $ HARNESS_PERL_SWITCHES="-MDevel::Cover=+ignore,^local/|^t/" prove -r t
 $ cover -report codecov
@@ -32,7 +32,7 @@ $ cover -report codecov
 
 ```yml
 before_script:
-  - cpanm --quiet --notest --skip-satisfied Devel::Cover Devel::Cover::Report::Codecov
+  - cpanm --quiet --notest --skip-satisfied Devel::Cover::Report::Codecov
 
 script:
   - perl Build.PL
@@ -53,7 +53,7 @@ curl -L https://cpanmin.us | perl - App::cpanminus
 export PATH=~/perl5/bin:$PATH
 cpanm --local-lib=~/perl5 local::lib && eval $(perl -I ~/perl5/lib/perl5/ -Mlocal::lib)
 cpanm --quiet --installdeps --notest .
-cpanm --quiet --notest --skip-satisfied Devel::Cover Devel::Cover::Report::Codecov
+cpanm --quiet --notest --skip-satisfied Devel::Cover::Report::Codecov
 ```
 
 > Append to your `Test Commands`
@@ -84,7 +84,7 @@ dependencies:
   pre:
     - curl -L https://cpanmin.us | perl - App::cpanminus
     - cpanm --local-lib=~/perl5 local::lib && echo "eval $(perl -I ~/perl5/lib/perl5/ -Mlocal::lib)" >> ~/.bashrc
-    - cpanm --quiet --notest --skip-satisfied Devel::Cover Devel::Cover::Report::Codecov
+    - cpanm --quiet --notest --skip-satisfied Devel::Cover::Report::Codecov
 
 test:
   override:
