@@ -27,7 +27,7 @@ $ HARNESS_PERL_SWITCHES="-MDevel::Cover=+ignore,^local/|^t/" prove -r t
 $ cover -report codecov
 ```
 
-# [![travis-org](https://avatars2.githubusercontent.com/u/639823?v=2&s=50)](https://travis-ci.org) Travis CI [![Build Status](https://travis-ci.org/pine613/example-perl.svg?branch=master)](https://travis-ci.org/pine613/example-perl)
+# [![travis-org](https://avatars2.githubusercontent.com/u/639823?v=2&s=50)](https://travis-ci.org) Travis CI &nbsp;[![Build Status](https://travis-ci.org/codecov/example-perl.svg?branch=master)](https://travis-ci.org/codecov/example-perl)
 > Append to your `.travis.yml`
 
 ```yml
