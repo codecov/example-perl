@@ -104,6 +104,7 @@ CODECOV_TOKEN=<YOUR_UPLOAD_TOKEN>
 
 > ### Start testing with [Circle CI](https://circleci.com/)
 
+We are happy to help if you have any questions. Please contact email our Support at [support@codecov.io](mailto:support@codecov.io)
 
 [1]: https://codecov.io/
 [2]: https://twitter.com/codecov
