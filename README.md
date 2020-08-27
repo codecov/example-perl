@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/codecov/example-clojure.svg?branch=master)](https://travis-ci.org/codecov/example-clojure)
 [![codecov.io](https://codecov.io/github/codecov/example-clojure/coverage.svg?branch=master)](https://codecov.io/github/codecov/example-clojure?branch=master)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcodecov%2Fexample-perl.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcodecov%2Fexample-perl?ref=badge_shield)
 
 ## Guide
 ### CI Setup
@@ -84,3 +85,6 @@ Repository tokens are required for (a) all private repos, (b) public repos not u
 MIT.
 
 Originally authored by [Jakub Elżbieciak](https://elzbieciak.pl/).
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcodecov%2Fexample-perl.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcodecov%2Fexample-perl?ref=badge_large)
