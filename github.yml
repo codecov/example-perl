@@ -2,9 +2,6 @@ name: Codecov
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
 jobs:
   coverage:
@@ -16,8 +13,7 @@ jobs:
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
         run: |
-          cpanm --notest  Module::Build Devel::Cover Devel::Cover::Report::Codecov
+          cpanm --notest Module::Build Devel::Cover Devel::Cover::Report::Codecov
           perl Build.PL 
-          cover -test
-          cover -report codecov
+          cover -test -report codecov
 
