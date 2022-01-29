@@ -81,7 +81,7 @@ jobs:
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
         run: |
-          cpanm --quiet --notest Module::Build Devel::Cover Devel::Cover::Report::Codecov
+          cpanm --quiet --notest Module::Build Devel::Cover Devel::Cover::Report::Codecovbash
           perl Build.PL 
           cover -test -report codecov
 ```
