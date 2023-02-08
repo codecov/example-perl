@@ -1,0 +1,19 @@
+name: Codecov
+
+on:
+  push:
+
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+    container: perl:latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run codecov GitHub Action
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+        run: |
+          cpanm --quiet --notest Module::Build Devel::Cover Devel::Cover::Report::Codecov
+          perl Build.PL 
+          cover -test -report codecov
+

@@ -67,10 +67,32 @@ after_success:
   - cover -report codecov
 ```
 
+#### GitHub Action
+
+Add to your `.github/workflows/main.yml` file
+```yml
+jobs:
+  codecov:
+    runs-on: ubuntu-latest
+    container: perl:latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run codecov GitHub Action
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+        run: |
+          cpanm --quiet --notest Module::Build Devel::Cover Devel::Cover::Report::Codecovbash
+          perl Build.PL 
+          cover -test -report codecov
+```
+
+Note that you need to link your GitHub repo to your codecov first and then add the `CODECOV_TOKEN` as a secret to your GitHub repository.
+
 ### Producing Coverage Reports
 ```
 cover -report codecov
 ```
+
 
 ## Caveats
 ### Private Repos
